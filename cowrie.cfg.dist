@@ -20,7 +20,7 @@
 # environment
 #
 # (default: svr04)
-hostname = svr04
+hostname = Pineapple
 
 
 # Directory where to save log files in.
@@ -125,7 +125,7 @@ backend = shell
 # behaviour).
 #
 # (default: not specified)
-#fake_addr = 192.168.66.254
+fake_addr = 172.16.42.1
 
 
 # The IP address on which this machine is reachable on from the internet.
@@ -228,7 +228,7 @@ dsa_private_key = etc/ssh_host_dsa_key
 # SSH-2.0-OpenSSH_5.9
 #
 # (default: "SSH-2.0-SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2")
-version = SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2
+version = OpenSSH_7.1p2, OpenSSL 1.0.2h  3 May 2016
 
 
 # IP addresses to listen for incoming SSH connections.

@@ -1,5 +1,5 @@
-root:x:!root
-root:x:!123456
-root:x:*
-richard:x:*
-richard:x:fout
+root:x:pineapplesareyummy
+root:x:pineapple
+root:x:toor
+root:x:password
+root:x:123456

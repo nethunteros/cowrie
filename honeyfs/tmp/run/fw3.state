@@ -1,0 +1,51 @@
+package fw3_state
+
+config defaults
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+	option __flags_v4 '0x6001f'
+	option __flags_v6 '0x20'
+
+config zone
+	option name 'lan'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+	option masq '0'
+	option conntrack '1'
+	option mtu_fix '0'
+	option custom_chains '1'
+	option family 'IPv4'
+	list device 'br-lan@lan'
+	list __addrs '172.16.42.1'
+	option __flags_v4 '0x22584f'
+	option __flags_v6 '0x4040'
+
+config zone
+	option name 'wan'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+	option masq '1'
+	option conntrack '1'
+	option mtu_fix '1'
+	option custom_chains '1'
+	option family 'IPv4'
+	option __flags_v4 '0x22584f'
+	option __flags_v6 '0x4040'
+
+config zone
+	option name 'usb'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+	option masq '1'
+	option conntrack '1'
+	option mtu_fix '1'
+	option custom_chains '1'
+	option family 'IPv4'
+	list device 'usb0@usb'
+	option __flags_v4 '0x22584f'
+	option __flags_v6 '0x4040'
+
