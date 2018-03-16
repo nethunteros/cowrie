@@ -20,7 +20,7 @@
 # environment
 #
 # (default: svr04)
-hostname = svr04
+hostname = raspberry
 
 
 # Directory where to save log files in.
@@ -227,8 +227,8 @@ dsa_private_key = etc/ssh_host_dsa_key
 # SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2
 # SSH-2.0-OpenSSH_5.9
 #
-# (default: "SSH-2.0-SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2")
-version = SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2
+# (default: "SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u3")
+version = SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u3
 
 
 # IP addresses to listen for incoming SSH connections.

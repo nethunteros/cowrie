@@ -11,6 +11,7 @@ enable cd
 enable command
 enable compgen
 enable complete
+enable compopt
 enable continue
 enable declare
 enable dirs
@@ -33,11 +34,13 @@ enable kill
 enable let
 enable local
 enable logout
+enable mapfile
 enable popd
 enable printf
 enable pushd
 enable pwd
 enable read
+enable readarray
 enable readonly
 enable return
 enable set

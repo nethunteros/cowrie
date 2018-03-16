@@ -1,7 +1,9 @@
-Filesystem                                              Size  Used Avail Use% Mounted on
-rootfs                                                  4.7G  731M  3.8G  17% /
-udev                                                     10M     0   10M   0% /dev
-tmpfs                                                    25M  192K   25M   1% /run
-/dev/disk/by-uuid/65626fdc-e4c5-4539-8745-edc212b9b0af  4.7G  731M  3.8G  17% /
-tmpfs                                                   5.0M     0  5.0M   0% /run/lock
-tmpfs                                                   101M     0  101M   0% /run/shm
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/root       29789692 4386224  24128824  16% /
+devtmpfs          470180       0    470180   0% /dev
+tmpfs             474788       0    474788   0% /dev/shm
+tmpfs             474788   12296    462492   3% /run
+tmpfs               5120       4      5116   1% /run/lock
+tmpfs             474788       0    474788   0% /sys/fs/cgroup
+/dev/mmcblk0p1     42131   21472     20659  51% /boot
+tmpfs              94956       0     94956   0% /run/user/1000
